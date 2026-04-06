@@ -1,0 +1,31 @@
+/* Name / Title */
+.name {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--accent);
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+.tagline {
+    margin-top: 12px;
+    padding: 14px;
+    background: linear-gradient(90deg, rgba(139, 69, 19, 0.08), rgba(139, 69, 19, 0.03));
+    border-radius: 8px;
+    color: #4B2E2E;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    color: var(--accent);
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 14px;
+}
