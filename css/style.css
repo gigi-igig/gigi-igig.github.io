@@ -30,6 +30,13 @@
     margin-right: 40px;
 }
 
+header a.btn-link {
+    float: right;
+    margin-top: 10px; /* 可調整和名字的垂直距離 */
+    text-decoration: none;
+    color: var(--primary); /* 保持你的主題色 */
+}
+
 body {
     height: 100%;
     background: var(--bg);
