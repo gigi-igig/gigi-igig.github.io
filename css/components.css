@@ -11,7 +11,7 @@
     display: inline-block;
     padding: 4px 18px;
     background-color: #ffffff;
-    color: #ffffff;
+    color: #4B2E2E;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
@@ -21,7 +21,8 @@
 }
 
 .btn-link:hover {
-    background-color: #4a472f;
+    background-color: #4B2E2E;
+    color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
@@ -40,4 +41,12 @@
     border-radius: 999px;
     font-size: 13px;
     color: var(--accent);
+}
+
+/* header-row*/
+.header-row {
+    display: flex;
+    justify-content: space-between; /* tagline 左，按鈕右 */
+    align-items: center;
+    gap: 12px; 
 }

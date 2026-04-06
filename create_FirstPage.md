@@ -62,7 +62,9 @@ Settings → Pages
 ```
 https://gigi-igig.github.io
 ```
+
 ---
+
 CSS 分工範例：
 
 | CSS 檔案         | 功能                                          |
@@ -71,7 +73,19 @@ CSS 分工範例：
 | layout.css     | 版面配置、容器、header/footer |
 | components.css | 可重用元件                   |
 | project.css      | project.html 專屬樣式           |
+| index.css      | index.html 專屬樣式           |
 | typography.css | 文字樣式、標題、subtitle                      |
 | responsive.css | 響應式           |
 | style.css      | 導入以上 CSS                                    |
 
+---
+
+gigi-igig.github.io/
+│
+├── index.html          ← 首頁
+├── page/
+│   └── project.html
+│
+├── css/
+│   └── style.css
+├── images/

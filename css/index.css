@@ -1,0 +1,32 @@
+/*section*/
+section {
+    margin-top: 12px;    /* section 與上方內容間距 */
+    margin-bottom: 12px; /* section 與下方內容間距 */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column; /* 上到下堆疊 */
+    gap: 16px;              /* 每個區塊垂直間距 */
+    max-width: 800px;       /* 限制寬度 */
+    margin: 0 auto;         /* 置中 */
+}
+
+.intro .name {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+.intro .tagline {
+    font-size: 1rem;
+    color: var(--muted);
+    margin: 0;
+}
+
+.intro .description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--muted);
+}

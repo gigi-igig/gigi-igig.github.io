@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>鄭竹淇 — 履歷</title>
 
 </head>
@@ -14,42 +14,44 @@
 
     <div class="container">
         <div class="card">
+            <div class="header-row">
+                <h1>專案介紹</h1>
+                <a class="btn-link" href="../index.html">回到首頁 →</a>
+            </div>
+            
             <section>
-                <h2>個人專案</h2>
-                <div class="edu">
-                    <div class="item">
+                <h2>深度學習﹑AI應用</h2>
+                
+                <div class="item">
                         <div class="title">Conditional GAN</div>
-                        <p>使用 Multi-Branch Conditional GAN 生成 Fashion MNIST 圖片，達到 KID Score 0.0100。</p>
+                        <p>使用 Multi-Branch Conditional GAN 生成 Fashion MNIST 圖片，針對不同類別間相似度不均的問題進行優化</p>
                         <div class="project">
-                            <img src="images/model_arch.jpg" alt="model_arch">
+                            <img src="../images/project/model_arch.jpg" alt="model_arch">
                             <div class="project-text">
                                 <p><strong>模型架構與技術亮點：</strong></p>
                                 <ul class="plain" style="margin-top:6px">
-                                    <li>Multi-Branch Conditional Generator：<br>將標籤經 Embedding 層轉換後與噪聲拼接，進入全連接層展開。</li>
+                                    <li>Multi-Branch Conditional Generator：<br>標籤經 Embedding 層轉換後與噪聲拼接。</li>
                                     <li>類別分支 (Class Branches)：<br>根據輸入標籤將影像特徵送入對應生成分支，確保類別獨立生成。</li>
-                                    <li>使用 Conv2DTranspose 與 BatchNormalization 放大影像，穩定訓練。</li>
+                                    <li>使用 Conv2DTranspose 與 BatchNormalization 放大影像特徵。</li>
                                 </ul>
-                                <a class="btn-link" href="https://github.com/gigi-igig/Fashion-MNIST-gan"
-                                    target="_blank"> 展開更多... 前往 GitHub 專案 </a>
-                            </div>
-                        </div>
-                    </div>
+                                <a class="btn-link" href="https://canva.link/g1yo4se5h35ykq2"
+                                    target="_blank"> 展開更多... 前往專案簡報 </a>
+                            </div>"
+                        </div>"
+                </div>
 
-                    <div class="item">
+                <div class="item">
                         <div class="title">AI Web Chatbot</div>
+                        <p>建立對話系統，管理 Session 與訊息資料。提供簡易 WebUI 操作介面，方便使用者互動。</p>
                         <div class="project">
-                            <img src="images/chatbot.jpg" alt="chatbot">
+                            <img src="../images/project/chatbot.jpg" alt="chatbot">
                             <div class="project-text">
-                                <p><strong>專案目標：</strong></p>
-                                <ul class="plain">
-                                    <li>建立對話系統，管理 Session 與訊息資料。</li>
-                                    <li>提供簡易 WebUI 操作介面，方便使用者互動。</li>
-                                </ul>
                                 <p><strong>使用技術：</strong></p>
                                 <ul class="plain">
                                     <li>後端：FastAPI + SQLModel</li>
                                     <li>前端：HTML + JavaScript</li>
                                     <li>模型串接：Ollama API</li>
+                                    <li>資料存取層（DAL）分離設計</li>
                                 </ul>
                                 <a class="btn-link"
                                     href="https://www.canva.com/design/DAGnbDdebWE/iO-QTKmFSX8ioylnf1qOsg/view?utm_content=DAGnbDdebWE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd5886c1c6f#2"
@@ -57,25 +59,53 @@
                             </div>
 
                         </div>
-                    </div>
+                </div>
+            
+            </section>
 
-
-                    <div class="item">
+            <section>
+                <h2>跨領域合作</h2>
+                <div class="item">
                         <div class="title">蛋雞友善飼養推廣</div>
+                        <p>透過 AR 工具，讓民眾更了解台灣的蛋雞現狀</p>
                         <div class="project">
-                            <img src="images/egg.jpg" alt="egg">
+                            <img src="../images/project/egg.jpg" alt="egg">
                             <div class="project-text">
-                                <p><strong>專案目標：</strong></p>
-                                <p> 透過 AR 工具，讓民眾更了解台灣的蛋雞現狀</p>
                                 <p><strong>使用技術：</strong></p>
                                 <ul class="plain">
                                     <li>blender的基礎建模工具完成素材</li>
                                     <li>應用XR+與觀眾互動</li>
                                 </ul>
+                                <a class="btn-link" href="https://canva.link/d4yf2wih1cvjfjx"
+                                    target="_blank"> 展開更多... 前往展場介紹 </a>
+                                <a class="btn-link" href="https://canva.link/mouabv1bvsr5qa4"
+                                    target="_blank"> 展開更多... 前往工具介紹 </a>
                             </div>
+                        </div>
+                </div>
+
+                <div class="item">
+                    <div class="title">MOMO APP 痛點改善調查</div>
+                    <p>重新設計介面排版，並透過問卷與使用者研究分析痛點改善成效</p>
+
+                    <div class="project">
+                        <img src="../images/project/Momo.png" alt="Momo">
+                        <div class="project-text">
+                            <p><strong>個人負責內容：</strong></p>
+                            <ul class="plain">
+                                <li>使用 Figma 進行介面設計與原型製作</li>
+                                <li>問卷資料分析與信度檢驗</li>
+                                <li>使用 Tableau 進行資料視覺化與統計呈現</li>
+                                <li>進行使用者質化訪談與需求整理</li>
+                            </ul>
+                            <a class="btn-link" href="https://canva.link/p7559ij7l6gttyq"
+                                target="_blank">展開更多... 前往專案簡報</a>
                         </div>
                     </div>
                 </div>
+                
+            </section>
+
         </div>
     </div>
     <footer class="floating-tail">
